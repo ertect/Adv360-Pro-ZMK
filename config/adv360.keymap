@@ -24,6 +24,20 @@
             label = "VIM_O";
         };
 
+        vim_d: vim_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END) &kp LC(X)>;
+            label = "VIM_D";
+        };
+
+        vim_z: vim_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(S) &kp LA(F4)>;
+            label = "VIM_Z";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -65,11 +79,11 @@
 
         fn_and_vim {
             bindings = <
-&none           &kp F1      &kp F2               &kp F3               &kp F4  &kp F5        &none                                                           &none   &kp F6          &kp F7          &kp F8        &kp F9     &kp F10    &kp F11
-&trans          &kp LA(F4)  &kp LC(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans        &none                                                           &none   &kp LC(C)       &kp LC(Z)       &trans        &vim_o     &kp LC(V)  &trans
-&trans          &trans      &trans               &trans               &none   &kp LC(HOME)  &none   &trans  &trans                &trans  &kp LEFT_CONTROL  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LC(S)  &trans
-&kp LEFT_SHIFT  &trans      &kp DELETE           &kp LC(DEL)          &trans  &trans                        &kp LEFT_CONTROL      &trans                            &trans          &trans          &trans        &trans     &kp LC(F)  &kp RIGHT_SHIFT
-&trans          &trans      &trans               &trans               &trans                &trans  &trans  &trans                &trans  &trans            &trans                  &trans          &trans        &trans     &trans     &trans
+&none           &kp F1           &kp F2               &kp F3               &kp F4  &kp F5        &none                                                           &none   &kp F6          &kp F7          &kp F8        &kp F9     &kp F10    &kp F11
+&trans          &kp LA(F4)       &kp LC(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans        &none                                                           &none   &kp LC(C)       &kp LC(Z)       &kp LEFT      &vim_o     &kp LC(V)  &trans
+&trans          &kp RIGHT_ARROW  &kp LC(H)            &vim_d               &none   &kp LC(HOME)  &none   &trans  &trans                &trans  &kp LEFT_CONTROL  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LC(S)  &trans
+&kp LEFT_SHIFT  &vim_z           &kp DELETE           &kp LC(DEL)          &trans  &trans                        &kp LEFT_CONTROL      &trans                            &trans          &trans          &trans        &trans     &kp LC(F)  &kp RIGHT_SHIFT
+&trans          &trans           &trans               &trans               &trans                &trans  &trans  &trans                &trans  &trans            &trans                  &trans          &trans        &trans     &trans     &trans
             >;
         };
 
