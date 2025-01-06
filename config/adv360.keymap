@@ -82,7 +82,7 @@
 &kp F12         &kp F1           &kp F2               &kp F3               &kp F4               &kp F5        &none                                                                   &none      &kp F6          &kp F7          &kp F8        &kp F9         &kp F10      &kp F11
 &kp TAB         &kp LA(F4)       &kp LC(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(Y)            &kp LC(T)     &none                                                                   &none      &kp LC(C)       &kp LC(Z)       &kp LEFT      &vim_o         &kp LC(V)    &trans
 &kp ESCAPE      &kp RIGHT_ARROW  &kp LC(H)            &vim_d               &kp LC(F)            &kp LC(HOME)  &none          &trans   &trans                &trans  &kp LEFT_CONTROL  &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp LC(S)    &trans
-&kp LEFT_SHIFT  &vim_z           &kp DELETE           &kp LC(DEL)          &kp LS(RIGHT_ARROW)  &trans                                &kp LEFT_CONTROL      &trans                               &trans          &trans          &none         &kp LC(V)      &kp LC(F)    &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &vim_z           &kp DELETE           &kp LC(DEL)          &kp LS(RIGHT_ARROW)  &none                                 &kp LEFT_CONTROL      &trans                               &trans          &trans          &none         &kp LC(V)      &kp LC(F)    &kp RIGHT_SHIFT
 &trans          &kp HOME         &kp END              &kp LEFT_ARROW       &kp RIGHT_ARROW                    &kp BACKSPACE  &kp DEL  &trans                &trans  &kp ENTER         &kp SPACE                  &kp DOWN        &kp UP_ARROW  &kp PAGE_DOWN  &kp PAGE_UP  &trans
             >;
         };
